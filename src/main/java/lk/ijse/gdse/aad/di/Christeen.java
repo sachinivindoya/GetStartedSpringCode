@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Qualifier("Long hair")
-@PureLove
+
 public class Christeen implements Love {
     @Override
     public void kiss() {
