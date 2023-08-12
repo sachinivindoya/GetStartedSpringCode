@@ -12,23 +12,23 @@ import javax.annotation.PreDestroy;
 @Component
 public class LifeCycle implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
     public LifeCycle(){
-        System.out.println("Constructor called");
+ //       System.out.println("Constructor called");
     }
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("Set bean Factory");
+   //     System.out.println("Set bean Factory");
 
     }
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("Bean Name is :" +s);
+     //   System.out.println("Bean Name is :" +s);
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("I am Ready ............");
+     //   System.out.println("I am Ready ............");
     }
 
     @Override
@@ -47,7 +47,7 @@ public class LifeCycle implements BeanNameAware, BeanFactoryAware, ApplicationCo
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("Man Yanoooo...!");
+     //   System.out.println("Man Yanoooo...!");
     }
 
 

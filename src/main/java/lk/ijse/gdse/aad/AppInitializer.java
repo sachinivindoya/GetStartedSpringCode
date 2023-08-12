@@ -12,8 +12,8 @@ public class AppInitializer extends Application {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(ApplicationConfig.class);
         ctx.refresh();
-        LifeCycle lifeCycle = (LifeCycle) ctx.getBean("lifeCycle");
-        System.out.println("Get bean name :" + lifeCycle);
+       // LifeCycle lifeCycle = (LifeCycle) ctx.getBean("lifeCycle");
+       // System.out.println("Get bean name :" + lifeCycle);
         ctx.registerShutdownHook();
     }
 
